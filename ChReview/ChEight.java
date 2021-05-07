@@ -20,7 +20,7 @@ class <name> {
     ...
   }
   //Accesor Syntax
-  public <type> get<variable>() {
+  public <type> get<variableName>() { //the variable is required to be in the class, not the methods.
     return this.<varName>;
   }
   

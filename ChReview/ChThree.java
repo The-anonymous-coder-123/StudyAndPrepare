@@ -3,7 +3,12 @@ public class ChThree  {
   public static void main(String[] args)  {
     //scanner declaration syntax
     Scanner <name>= new Scanner(System.in);
+    //useful scanner methods:
+    .nextInt()  -   records the typed int after enter key is pressed
+    .nextLine() -   records all typed keys until enter is pressed.
     //using "console" or "scan" as a scanner name is a good habit to have. it helps with organization of the program.
+    //java doesnt like memory leaks, so always put <scannername>.close() on its own seperate line once your done 
+    //using the scanner. this closes the scanner.
     //method call Syntax
     <name>(<parameters>);
   }
@@ -20,20 +25,20 @@ public class ChThree  {
 void  int  boolean  String  char
 
 //indexes:
-//a string is a collection of characters, and thus, must contain a way to find certain points in the string.
-//ex
-// a good habit is to put an index above the string.
-//Index           012345678901234567890123456789012
-String myString= "This String is 32 characters long"
-//indexes count by the farthest right number. so a 12 character long index will be 012345678901.
-//using the .length() method, you can get the index, by subtracting one.
+  //a string is a collection of characters, and thus, must contain a way to find certain points in the string.
+  //ex
+  // a good habit is to put an index above the string.
+  //Index           012345678901234567890123456789012
+  String myString= "This String is 32 characters long"
+  //indexes count by the farthest right number minus one. so a 12 character long index will be 012345678901.
+  //using the .length() method, you can get the index, by subtracting one.
 //The Math Class.
 //allows for shorter, more complex equations.
 //useful math constants
 E     natural logarithm base. goes on forever (2.71828...)
-PI    circumfrence:diameter of circles. goes on forever  (3.14159...)
+PI    circumfrence/diameter of circles. goes on forever  (3.14159...)
 //useful STATIC methods in the Math Class:
-//    method      description         example
+//    methodName      description         example
       abs      absolute value         Math.abs(-123) returns 123
       ceil     round up               Math.ceil(3.14) returns 4.0  //note that decimals are irrelevant in both ceil and floor.
       cos      cosine(radians)        Math.cos(Math.PI) returns -1.0
